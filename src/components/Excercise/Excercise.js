@@ -3,6 +3,7 @@ import './Excercise.css'
 
 const Excercise = (props) => {
     const { name, image, body, age, time } = props.activity;
+    const { handleClick } = props
     return (
         <div className='excercise'>
             <img src={image} alt="" />
@@ -12,7 +13,7 @@ const Excercise = (props) => {
                 <p>For age: <strong>{age}</strong></p>
                 <p>Time required: <strong>{time}m</strong></p>
             </div>
-            <button className='btn-add'>
+            <button onClick={() => handleClick(props.activity)} className='btn-add'>
                 <p>Add to list</p>
             </button>
         </div>
