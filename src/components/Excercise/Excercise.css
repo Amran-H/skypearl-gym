@@ -1,0 +1,52 @@
+.excercise {
+    width: 300px;
+    height: auto;
+    min-height: 500px;
+    background-color: white;
+    border: 1px solid rgb(236, 123, 123);
+    border-radius: 10px;
+    position: relative;
+
+}
+
+.excercise img {
+    width: auto;
+    max-width: 286px;
+    height: auto;
+    max-height: 286px;
+    border-radius: 10px;
+    margin: 7px;
+
+}
+
+.excercise-info {
+    margin: 0 15px;
+    text-align: center;
+}
+
+.product-name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 7px;
+    text-align: center;
+}
+
+.btn-add {
+    width: 90%;
+    background-color: rgb(91, 91, 249);
+    border: 0;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    font-weight: 700;
+    color: white;
+
+
+}
+
+.btn-add:hover {
+    background-color: green;
+}

@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Squat",
+        "body": "To achieve the best results, use a heavy weight, with fewer reps to increase strength and muscle mass.",
+        "age": "20-25",
+        "time": 2,
+        "image": "https://media.istockphoto.com/photos/strength-workout-concept-active-mature-man-doing-squats-at-home-in-picture-id1331281814?b=1&k=20&m=1331281814&s=170667a&w=0&h=pmcnf1MKmCUpberDuKu2Jr7RBATXAPWclNA864ASFx8="
+    },
+    {
+        "id": 2,
+        "name": "Plank",
+        "body": "To use lighter weights (or simply your body weight) with explosive plyometric movements to develop your power and speed.",
+        "age": "20-25",
+        "time": 4,
+        "image": "https://media.istockphoto.com/photos/plank-it-picture-id506760290?k=20&m=506760290&s=612x612&w=0&h=FVKdG4TEP6Gqj4qdSZ6-tBYklvzt0BTUT5SNkZduZz4="
+    },
+    {
+        "id": 3,
+        "name": "Bench Press",
+        "body": " Use a heavy weight, to achieve the best results, with fewer reps to increase strength and muscle mass, or use lighter weights.",
+        "age": "20-25",
+        "time": 3,
+        "image": "https://image.shutterstock.com/image-photo/athletic-man-gym-exercising-on-260nw-1184681734.jpg"
+    },
+    {
+        "id": 8,
+        "name": "treadmill",
+        "body": "To achieve the best results, use a heavy weight, with fewer reps to increase strength and muscle mass.",
+        "age": "20-25",
+        "time": 2,
+        "image": "https://image.shutterstock.com/image-photo/full-length-shot-young-man-260nw-1472140262.jpg"
+    },
+    {
+        "id": 6,
+        "name": "dumbbells",
+        "body": "To achieve the best results, use a heavy weight, with fewer reps to increase strength and muscle mass.",
+        "age": "20-25",
+        "time": 2,
+        "image": "https://cdn.pixabay.com/photo/2017/08/07/14/02/man-2604149__340.jpg"
+    },
+    {
+        "id": 10,
+        "name": "barbells",
+        "body": "To achieve the best results, use a heavy weight, with fewer reps to increase strength and muscle mass.",
+        "age": "20-25",
+        "time": 2,
+        "image": "https://images.unsplash.com/photo-1623946724822-ba48a838f3da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YmFyYmVsbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+    }
+]
