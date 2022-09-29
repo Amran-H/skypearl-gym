@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Excercise from '../Excercise/Excercise';
 import Profile from '../Profile/Profile';
+import Question from '../Question/Question';
 import './Activity.css'
 
 const Activity = () => {
@@ -33,6 +34,7 @@ const Activity = () => {
                         handleClick={handleClick}
                     ></Excercise>)
                 }
+                <Question></Question>
             </div>
 
         </div>
