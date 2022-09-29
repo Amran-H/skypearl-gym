@@ -10,11 +10,9 @@ const Profile = (props) => {
     for (const activity of time) {
         total = total + activity.time;
     }
-
     const [count, setCount] = useState(0)
-    const handleClickDone = () => {
-        toast.success("Workout Done!!")
-    }
+
+    const notify = () => toast("Workout Done!");
 
     return (
         <div className='profile-container'>
@@ -60,7 +58,7 @@ const Profile = (props) => {
             </div>
             <br />
             <br />
-            <button onClick={handleClickDone} className='btn-done'><p>Workout Done</p></button>
+            <button onClick={notify} className='btn-done'><p>Workout Done</p></button> <ToastContainer />
         </div>
     );
 };
