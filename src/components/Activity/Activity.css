@@ -1,6 +1,6 @@
 .activity-container {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 1fr 4fr;
 }
 
 .activities {
@@ -8,6 +8,12 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     margin: 100px 50px 100px;
+}
+
+.profile {
+    background-color: rgb(192, 181, 181);
+    text-align: center;
+    margin-left: 20px;
 }
 
 @media screen and (max-width: 560px) {

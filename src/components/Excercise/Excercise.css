@@ -2,10 +2,11 @@
     width: auto;
     height: auto;
     min-height: 500px;
-    background-color: white;
+    background-color: rgb(180, 89, 89);
     border: 1px solid rgb(236, 123, 123);
     border-radius: 10px;
     position: relative;
+    color: white;
 
 }
 
@@ -16,7 +17,11 @@
     max-height: 286px;
     border-radius: 10px;
     margin: 7px;
+}
 
+.img {
+    display: flex;
+    justify-content: center;
 }
 
 .excercise-info {

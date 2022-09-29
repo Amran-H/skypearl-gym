@@ -6,7 +6,9 @@ const Excercise = (props) => {
     const { handleClick } = props
     return (
         <div className='excercise'>
-            <img src={image} alt="" />
+            <div className='img'>
+                <img src={image} alt="" />
+            </div>
             <div className='excercise-info'>
                 <p className='product-name'>{name}</p>
                 <p>{body}</p>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Excercise from '../Excercise/Excercise';
+import Profile from '../Profile/Profile';
 import './Activity.css'
 
 const Activity = () => {
@@ -20,6 +21,9 @@ const Activity = () => {
 
     return (
         <div className='activity-container'>
+            <div className="profile">
+                <Profile cart={time}></Profile>
+            </div>
             <div className="activities">
                 {
                     activities.map(activity => <Excercise
@@ -29,10 +33,7 @@ const Activity = () => {
                     ></Excercise>)
                 }
             </div>
-            <div className="profile">
-                <h1>profile</h1>
-                <p>Selected activities: {time.length}</p>
-            </div>
+
         </div>
     );
 };
