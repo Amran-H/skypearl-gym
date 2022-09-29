@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Profile.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Profile = (props) => {
     const { time } = props;
@@ -8,6 +10,12 @@ const Profile = (props) => {
     for (const activity of time) {
         total = total + activity.time;
     }
+
+    const [count, setCount] = useState(0)
+    const handleClickDone = () => {
+        toast.success("Workout Done!!")
+    }
+
     return (
         <div className='profile-container'>
             <div className='name'>
@@ -31,11 +39,11 @@ const Profile = (props) => {
             </div>
             <h4>Take a break</h4>
             <div className='btn-break'>
-                <button>20s</button>
-                <button>30s</button>
-                <button>40s</button>
-                <button>50s</button>
-                <button>60s</button>
+                <button onClick={() => setCount(20)}>20s</button>
+                <button onClick={() => setCount(30)}>30s</button>
+                <button onClick={() => setCount(40)}>40s</button>
+                <button onClick={() => setCount(50)}>50s</button>
+                <button onClick={() => setCount(60)}>60s</button>
             </div>
             <br />
             <h4>Workout info</h4>
@@ -47,12 +55,12 @@ const Profile = (props) => {
                 <br />
                 <div className='break'>
                     <p >Break time</p>
-                    <p>40 <small>seconds</small></p>
+                    <p>{count} <small>seconds</small></p>
                 </div>
             </div>
             <br />
             <br />
-            <button className='btn-done'><p>Workout Done</p></button>
+            <button onClick={handleClickDone} className='btn-done'><p>Workout Done</p></button>
         </div>
     );
 };
