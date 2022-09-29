@@ -1,9 +1,13 @@
 import React from 'react';
 import './Profile.css'
 
-const Profile = ({ time }) => {
-    // const { time } = props;
+const Profile = (props) => {
+    const { time } = props;
 
+    let total = 0;
+    for (const activity of time) {
+        total = total + activity.time;
+    }
     return (
         <div className='profile-container'>
             <div className='name'>
@@ -27,23 +31,23 @@ const Profile = ({ time }) => {
             </div>
             <h4>Take a break</h4>
             <div className='btn-break'>
-                <button>20</button>
-                <button>30</button>
-                <button>40</button>
-                <button>50</button>
-                <button>60</button>
+                <button>20s</button>
+                <button>30s</button>
+                <button>40s</button>
+                <button>50s</button>
+                <button>60s</button>
             </div>
             <br />
             <h4>Workout info</h4>
             <div className='workout-info'>
                 <div className='time'>
                     <p>Workout time</p>
-                    <p>898</p>
+                    <p>{total} <small>minutes</small></p>
                 </div>
                 <br />
                 <div className='break'>
                     <p >Break time</p>
-                    <p>40</p>
+                    <p>40 <small>seconds</small></p>
                 </div>
             </div>
             <br />

@@ -13,7 +13,7 @@ const Activity = () => {
     }, [])
 
     const handleClick = (activity) => {
-        console.log(activity);
+        // console.log(activity);
         // time.push(activity);
         const newTime = [...time, activity];
         setTime(newTime);
