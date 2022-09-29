@@ -1,7 +1,9 @@
 import React from 'react';
 import './Profile.css'
 
-const Profile = (time) => {
+const Profile = ({ time }) => {
+    // const { time } = props;
+
     return (
         <div className='profile-container'>
             <div className='name'>

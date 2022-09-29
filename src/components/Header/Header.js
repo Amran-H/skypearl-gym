@@ -18,12 +18,12 @@ const Header = () => {
                     <img src={icon} alt="" />
                     <h2>SkyPearl-Gym</h2>
                 </div>
-                <div>
+                {/* <div>
                     <a href="/shop">Shop</a>
                     <a href="/orders">Orders</a>
                     <a href="/inventory">Inventory</a>
                     <a href="/about">About</a>
-                </div>
+                </div> */}
             </nav>
         </div>
     );

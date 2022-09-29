@@ -5,7 +5,7 @@ import './Activity.css'
 
 const Activity = () => {
     const [activities, setActivities] = useState([]);
-    const [time, setTime] = useState([])
+    const [time, setTime] = useState([]);
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
@@ -22,7 +22,9 @@ const Activity = () => {
     return (
         <div className='activity-container'>
             <div className="profile">
-                <Profile cart={time}></Profile>
+                <Profile
+                    time={time}
+                ></Profile>
             </div>
             <div className="activities">
                 {
